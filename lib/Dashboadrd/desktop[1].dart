@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web/FOORM/webform.dart';
+
 import 'package:flutter_web/landingpage/landingpage.dart';
-import 'package:flutter_web/signin.dart/Signin.dart';
+import 'package:flutter_web/loginpg/loginpg.dart';
 
 class DesktopDashboard extends StatelessWidget {
   const DesktopDashboard({Key? key});
@@ -45,11 +47,20 @@ class DesktopDashboard extends StatelessWidget {
                           ),
                         ),
                         Spacer(),
-                        Text(
-                          "Home",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: constraints.maxWidth * 0.02,
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => FormScreen1(),
+                                ));
+                          },
+                          child: Text(
+                            "Home",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: constraints.maxWidth * 0.02,
+                            ),
                           ),
                         ),
                         SizedBox(width: constraints.maxWidth * 0.02),
@@ -74,7 +85,7 @@ class DesktopDashboard extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => LoginPage()),
+                                  builder: (context) => LoginPg()),
                             );
                           },
                           child: Container(
@@ -175,95 +186,95 @@ class DesktopDashboard extends StatelessWidget {
 //               fit: BoxFit.cover,
 //             )),
 //           ),
-//           Column(
-//             children: [
-//               const SizedBox(
-//                 height: 80,
-//               ),
-//               Container(
-//                 child: Row(
-//                   children: [
-//                     const SizedBox(
-//                       width: 80,
-//                     ),
-//                     const Text(
-//                       "CAMPUSS",
-//                       style: TextStyle(
-//                         color: Colors.white,
-//                         fontSize: 40,
-//                         fontWeight: FontWeight.w900,
-//                       ),
-//                     ),
-//                     const Text(
-//                       "BUZZ",
-//                       style: TextStyle(
-//                         color: Colors.red,
-//                         fontSize: 40,
-//                         fontWeight: FontWeight.w900,
-//                       ),
-//                     ),
-//                     const SizedBox(
-//                       width: 450,
-//                     ),
-//                     const Text(
-//                       "Home",
-//                       style: TextStyle(
-//                         color: Colors.white,
-//                         fontSize: 25,
-//                       ),
-//                     ),
-//                     const SizedBox(
-//                       width: 50,
-//                     ),
-//                     const Text(
-//                       "About",
-//                       style: TextStyle(
-//                         color: Colors.white,
-//                         fontSize: 25,
-//                       ),
-//                     ),
-//                     const SizedBox(
-//                       width: 50,
-//                     ),
-//                     const Text(
-//                       "Services",
-//                       style: TextStyle(
-//                         color: Colors.white,
-//                         fontSize: 25,
-//                       ),
-//                     ),
-//                     const SizedBox(
-//                       width: 50,
-//                     ),
-//                     InkWell(
-//                       onTap: () {
-//                         Navigator.push(
-//                             context,
-//                             MaterialPageRoute(
-//                                 builder: (context) => LoginPage()));
-//                       },
-//                       child: Container(
-//                           decoration: BoxDecoration(
-//                             borderRadius: BorderRadius.circular(11),
-//                             color: Colors.white,
-//                           ),
-//                           width: 105,
-//                           height: 49,
-//                           child: const Center(
-//                             child: Text(
-//                               "Sign In",
-//                               style: TextStyle(
-//                                   color: Colors.black,
-//                                   fontSize: 25,
-//                                   fontWeight: FontWeight.w900),
-//                             ),
-//                           )),
-//                     ),
-//                   ],
-//                 ),
-//               ),
-//             ],
-//           ),
+          // Column(
+          //   children: [
+          //     const SizedBox(
+          //       height: 80,
+          //     ),
+          //     Container(
+          //       child: Row(
+          //         children: [
+          //           const SizedBox(
+          //             width: 80,
+          //           ),
+          //           const Text(
+          //             "CAMPUSS",
+          //             style: TextStyle(
+          //               color: Colors.white,
+          //               fontSize: 40,
+          //               fontWeight: FontWeight.w900,
+          //             ),
+          //           ),
+          //           const Text(
+          //             "BUZZ",
+          //             style: TextStyle(
+          //               color: Colors.red,
+          //               fontSize: 40,
+          //               fontWeight: FontWeight.w900,
+          //             ),
+          //           ),
+          //           const SizedBox(
+          //             width: 450,
+          //           ),
+          //           const Text(
+          //             "Home",
+          //             style: TextStyle(
+          //               color: Colors.white,
+          //               fontSize: 25,
+          //             ),
+          //           ),
+          //           const SizedBox(
+          //             width: 50,
+          //           ),
+          //           const Text(
+          //             "About",
+          //             style: TextStyle(
+          //               color: Colors.white,
+          //               fontSize: 25,
+          //             ),
+          //           ),
+          //           const SizedBox(
+          //             width: 50,
+          //           ),
+          //           const Text(
+          //             "Services",
+          //             style: TextStyle(
+          //               color: Colors.white,
+          //               fontSize: 25,
+          //             ),
+          //           ),
+          //           const SizedBox(
+          //             width: 50,
+          //           ),
+          //           InkWell(
+          //             onTap: () {
+          //               Navigator.push(
+          //                   context,
+          //                   MaterialPageRoute(
+          //                       builder: (context) => LoginPage()));
+          //             },
+          //             child: Container(
+          //                 decoration: BoxDecoration(
+          //                   borderRadius: BorderRadius.circular(11),
+          //                   color: Colors.white,
+          //                 ),
+          //                 width: 105,
+          //                 height: 49,
+          //                 child: const Center(
+          //                   child: Text(
+          //                     "Sign In",
+          //                     style: TextStyle(
+          //                         color: Colors.black,
+          //                         fontSize: 25,
+          //                         fontWeight: FontWeight.w900),
+          //                   ),
+          //                 )),
+          //           ),
+          //         ],
+          //       ),
+          //     ),
+          //   ],
+          // ),
 //           const Column(
 //             children: [
 //               Padding(
@@ -303,19 +314,19 @@ class DesktopDashboard extends StatelessWidget {
 //                   )),
 //             ),
 //           ),
-//           // Row(
-//           //   children: [
-//           //     Align(
-//           //       alignment: Alignment.bottomCenter,
-//           //       child: Container(
-//           //         padding: const EdgeInsets.only(left: 500, top: 500),
-//           //         decoration: const BoxDecoration(color: Colors.white),
-//           //         width: 30,
-//           //         height: 30,
-//           //       ),
-//           //     )
-//           //   ],
-//           // ),
+          // Row(
+          //   children: [
+          //     Align(
+          //       alignment: Alignment.bottomCenter,
+          //       child: Container(
+          //         padding: const EdgeInsets.only(left: 500, top: 500),
+          //         decoration: const BoxDecoration(color: Colors.white),
+          //         width: 30,
+          //         height: 30,
+          //       ),
+          //     )
+          //   ],
+          // ),
 //         ],
 //       ),
 //     );

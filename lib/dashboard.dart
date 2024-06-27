@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web/dashboard/mobile/mobile.dart';
-import 'package:flutter_web/dashboard/tablet/tablet.dart';
+import 'package:flutter_web/Dashboadrd/desktop%5B1%5D.dart';
+import 'package:flutter_web/Dashboadrd/mobile%5B1%5D.dart';
+import 'package:flutter_web/Dashboadrd/tablet%5B1%5D.dart';
 import 'package:flutter_web/widgets/responsive.dart';
-
-import 'dashboard/desktop/desktop.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});

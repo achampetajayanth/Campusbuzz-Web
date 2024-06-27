@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web/dashboard.dart';
 import 'package:flutter_web/side_menu_controller.dart';
 import 'package:flutter_web/widgets/responsive.dart';
 import 'package:provider/provider.dart';
-
-import 'dashboard.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key});

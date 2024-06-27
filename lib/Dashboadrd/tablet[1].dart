@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_web/landingpage/landingpage.dart';
-import 'package:flutter_web/signin.dart/Signin.dart';
+import 'package:flutter_web/loginpg/loginpg.dart';
 
 class TabletDashboard extends StatelessWidget {
   const TabletDashboard({Key? key});
@@ -74,7 +75,7 @@ class TabletDashboard extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => LoginPage()),
+                                  builder: (context) => LoginPg()),
                             );
                           },
                           child: Container(

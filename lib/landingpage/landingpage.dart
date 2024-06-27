@@ -128,13 +128,13 @@ class lpage extends StatelessWidget {
       body: LayoutBuilder(
         builder: (BuildContext context, BoxConstraints constraints) {
           return Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [Colors.deepOrange, Colors.white],
-              ),
-            ),
+            decoration: const BoxDecoration(color: Colors.redAccent
+                // gradient: LinearGradient(
+                //   begin: Alignment.topCenter,
+                //   end: Alignment.bottomCenter,
+                //   colors: [Colors.deepOrange, Colors.white],
+                // ),
+                ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -152,7 +152,7 @@ class lpage extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(height: 30),
+                const SizedBox(height: 35),
                 buildCategoryRow(
                   constraints,
                   image1: "assets/fest.jpg",
@@ -162,7 +162,7 @@ class lpage extends StatelessWidget {
                   image3: "assets/techfst.jpg",
                   label3: "Tech-Fest",
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 40),
                 buildCategoryRow(
                   constraints,
                   image1: "assets/culfst.jpg",
@@ -205,7 +205,7 @@ class lpage extends StatelessWidget {
     String label,
   ) {
     return Container(
-      width: constraints.maxWidth * 0.25,
+      width: constraints.maxWidth * 0.265,
       height: constraints.maxHeight * 0.3,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),

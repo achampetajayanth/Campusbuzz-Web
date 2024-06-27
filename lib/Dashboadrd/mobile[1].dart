@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web/FOORM/DForm.dart';
-import 'package:flutter_web/main.dart';
-
-import '../../widgets/header.dart';
+import 'package:flutter_web/FOORM/webform.dart';
 
 class MobileDashboard extends StatelessWidget {
   const MobileDashboard({super.key});
